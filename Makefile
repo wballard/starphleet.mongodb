@@ -8,4 +8,5 @@ install:
 	stop mongodb
 
 start:
+	#starting mongo
 	mongod --config ${HOME}/mongodb.conf --dbpath /var/data/mongodb

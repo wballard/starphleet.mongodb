@@ -5,6 +5,7 @@ default:
 install:
 	apt-get install -y mongodb
 	stop mongodb
+	[ -d /var/data/mongodb ] || mkdir -p /var/data/mongodb
 
 start:
 	#starting mongo
